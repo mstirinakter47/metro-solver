@@ -7,6 +7,9 @@ import LatestWork from '../HomePageComponent/LatestWork';
 import OurService from '../HomePageComponent/OurService';
 import ContactForm from '../HomePageComponent/ContactForm';
 import Footer from '../utils/Footer';
+import MeetOurAgents from '../utils/MeetOurAgents';
+import FAQSection from '../HomePageComponent/FAQSection';
+import ContactMap from '../utils/ContactMap';
 
 const Home = () => {
   return (
@@ -21,6 +24,9 @@ const Home = () => {
         <ReviewsSlider></ReviewsSlider>
         <OurService></OurService>
         <ContactForm></ContactForm>
+        <MeetOurAgents></MeetOurAgents>
+        <FAQSection></FAQSection>
+        <ContactMap></ContactMap>
         <Footer />
       </div>
     </div>

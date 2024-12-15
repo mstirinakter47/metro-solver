@@ -1,6 +1,6 @@
-import star from '../HomePagePhoto/star.png';
-import mail from '../utilsPhoto/mail.png';
-import metro from '../utilsPhoto/metro.png';
+import star from "../HomePagePhoto/star.png";
+import mail from "../utilsPhoto/mail.png";
+import metro from "../utilsPhoto/metro.png";
 
 const Footer = () => {
   return (
@@ -13,13 +13,13 @@ const Footer = () => {
           Join the 25000+ client, in our company
         </p>
       </div>
-      <div className="relative flex w-[600px] h-[88px] mx-auto justify-center items-center">
+      <div className="relative flex w-[600px] h-[88px] mx-auto justify-center items-center lg:mb-[72px]">
         <input
           className="bg-[#fff] rounded-[100px] w-full h-20 px-5 mt-5"
           type="text"
           placeholder="Enter your email"
         />
-        <button className="absolute right-3 mt-5 text-2xl text-white font-normal rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(105deg,_#6384FC_4.1%,_#C16EFD_54.8%,_#6384FC_92.38%)] py-4 px-9 flex items-center">
+        <button className="absolute right-3 mt-5 text-2xl text-white font-normal rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(105deg,_#6384FC_4.1%,_#C16EFD_54.8%,_#6384FC_92.38%)] py-4 px-9 flex items-center ">
           <img className="w-8 h-8" src={star} alt="" />
           Subscribe
         </button>
@@ -30,14 +30,14 @@ const Footer = () => {
           <h3 className="text-lg font-bold mb-4 text-white">Company</h3>
           <ul>
             {[
-              'Home',
-              'About us',
-              'Team',
-              'User Profile',
-              'White Labelling',
-              'Careers',
-              'Start Earning',
-            ].map(item => (
+              "Home",
+              "About us",
+              "Team",
+              "User Profile",
+              "White Labelling",
+              "Careers",
+              "Start Earning",
+            ].map((item) => (
               <li
                 key={item}
                 className="mb-2 hover:text-yellow-500 cursor-pointer"
@@ -53,16 +53,16 @@ const Footer = () => {
           <h3 className="text-lg font-bold mb-4 text-white">Services</h3>
           <ul>
             {[
-              'Digital Marketing',
-              'Creative Writing Solution',
-              'Web & Software',
-              'E-Commerce Solution',
-              'Graphic Design',
-              'Multimedia & Video Editing',
-              'Buy & Sell',
-              'Merchandise',
-              'Special Combo',
-            ].map(item => (
+              "Digital Marketing",
+              "Creative Writing Solution",
+              "Web & Software",
+              "E-Commerce Solution",
+              "Graphic Design",
+              "Multimedia & Video Editing",
+              "Buy & Sell",
+              "Merchandise",
+              "Special Combo",
+            ].map((item) => (
               <li
                 key={item}
                 className="mb-2 hover:text-yellow-500 cursor-pointer"
@@ -191,13 +191,25 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center gap-14 ">
-        <div className="">
-          <img className="w-[458px] h-[245px]" src={metro} alt="" />
-        </div>
-        <div className='text-white'>
-          <h1 className='text-7xl'>METRO SOLVER</h1>
-          <h1 className='text-5xl'>your it partner</h1>
+     
+
+      <div className="flex items-center justify-center">
+        <div className="flex lg:flex-row flex-col justify-end items-center gap-14 p-8  rounded-lg shadow-lg">
+          {/* Image Container */}
+          <div className="flex-1">
+            <img
+              className="w-[458px] h-[245px] object-contain"
+              src={metro}
+              alt="Metro Solver Logo"
+            />
+          </div>
+          {/* Text Container */}
+          <div className="text-white flex-1">
+            <h1 className="lg:text-7xl md:text-5xl text-4xl flex items-center gap-2"><p>METRO</p> <p>SOLVER</p> </h1>
+            <h2 className="lg:text-5xl md:text-4xl text-2xl  mt-2">
+              your it partner
+            </h2>
+          </div>
         </div>
       </div>
     </div>

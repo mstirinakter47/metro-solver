@@ -7,7 +7,7 @@ import icon4 from '../HomePagePhoto/icon4.png'
 import icon5 from '../HomePagePhoto/icon5.png'
 const ContactForm = () => {
   return (
-    <div className=" p-8 md:p-12 lg:p-16 rounded-lg flex flex-col lg:flex-row items-center justify-between gap-10">
+    <div className=" p-8 md:p-12 lg:p-16 rounded-lg flex flex-col lg:flex-row items-center justify-between gap-10 lg:mb-[140px]">
       {/* Left Side Content */}
       <div className="rounded-[30px] p-6 md:p-8 lg:p-10 bg-gradient-to-r from-[#5C258D] to-[#4389A2] shadow-lg text-white flex-1 w-full">
         {/* Card Content */}
